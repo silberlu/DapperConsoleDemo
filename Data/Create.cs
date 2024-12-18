@@ -5,7 +5,7 @@ namespace DapperConsoleDemo.Data
 {
     public static class Create
     {
-        public static int NewProduct(string connectionString, string productName, string brandName, int productCategoryID, decimal price, int stockQuantity)
+        public static int NewProduct(string connectionString, string productName, string brandName, int productCategoryID, decimal price, decimal stockQuantity)
         {
             using (var connection = new SqlConnection(connectionString))
             {

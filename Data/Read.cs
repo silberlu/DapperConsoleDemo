@@ -11,7 +11,7 @@ namespace DapperConsoleDemo.Data
         {
             using (var conexao = new SqlConnection(connectionString))
             {
-                var products = conexao.Query<Product>(@"SELECT * FROM DimProduct").ToList();
+                var products = conexao.Query<Product>(@"SELECT * FROM Product").ToList();
                 return products;
             }
         }
@@ -46,4 +46,3 @@ namespace DapperConsoleDemo.Data
         }
     }
 }
-
